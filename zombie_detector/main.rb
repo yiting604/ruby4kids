@@ -1,9 +1,10 @@
 while true
     puts "blood virus leve?"
-    level = gets.to_i
-    if level < 0
+    line = gets
+    if line.nil?
         break
     end
+    level = line.to_i
 
     if level == 0
         puts "you are good"
